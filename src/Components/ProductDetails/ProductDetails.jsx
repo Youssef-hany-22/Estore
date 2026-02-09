@@ -1,13 +1,11 @@
-import axios from 'axios';
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router';
-import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router'
+import { useSelector, useDispatch } from 'react-redux'
 
-import {addToCart , deleteToCart} from '../../features/addToCartSlice.js'
-import { addToWishlist } from '../../features/addToWishlistSlice.js';
-import { toast } from "react-toastify";
-
-
+import { addToCart, deleteToCart } from '@/features/addToCartSlice.js'
+import { addToWishlist } from '@/features/addToWishlistSlice.js'
+import { toast } from "react-toastify"
 
 
 

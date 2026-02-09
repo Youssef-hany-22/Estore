@@ -1,10 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToWishlist, deleteToWishlist } from '../../features/addToWishlistSlice'
-import { addToCart } from '../../features/addToCartSlice'
+import { addToWishlist, deleteToWishlist } from '@/features/addToWishlistSlice'
+import { addToCart } from '@/features/addToCartSlice'
 import { toast } from 'react-toastify'
- 
-
 
 const Wishlist = () => {
     const cart  = useSelector((state) => state.cartArray.value)

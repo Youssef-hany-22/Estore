@@ -7,7 +7,7 @@ import { IoMdHeart } from "react-icons/io";
 
 
 import { useSelector } from 'react-redux'
-import Checkout from './../Checkout/Checkout';
+import Checkout from '@/Components/Checkout/Checkout'
 
 function MyNav() {
     const cart  = useSelector((state) => state.cartArray.value)

@@ -1,12 +1,10 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router';
-import { deleteToCart, toggleSelect } from '../../features/addToCartSlice';
-
-import { addToWishlist } from '../../features/addToWishlistSlice';
-import Wishlist from './../wishlist/Wishlist';
-import { toast } from "react-toastify";
-
+import { useSelector, useDispatch } from 'react-redux'
+import { Link, useNavigate } from 'react-router'
+import { deleteToCart, toggleSelect } from '@/features/addToCartSlice'
+import { addToWishlist } from '@/features/addToWishlistSlice'
+import Wishlist from '@/Components/wishlist/Wishlist'
+import { toast } from "react-toastify"
 
 const Cart = () => {
       const dispatch = useDispatch()

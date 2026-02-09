@@ -1,9 +1,7 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { clearCart } from '../../features/addToCartSlice';
-import { useNavigate } from 'react-router';
-import { toggleSelect } from '../../features/addToCartSlice';
-
+import { useDispatch, useSelector } from 'react-redux'
+import { clearCart, toggleSelect } from '@/features/addToCartSlice'
+import { useNavigate } from 'react-router'
 const Checkout = () => {
     let navigate = useNavigate()
     const cartItems = useSelector((state) => state.cartArray.value);

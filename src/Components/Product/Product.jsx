@@ -1,11 +1,10 @@
 import React from 'react'
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
-import {  useNavigate } from 'react-router';
-import DeleteCard from './../DeleteCard/DeleteCard';
-import { toast } from 'react-toastify';
-
+import { useEffect, useState } from "react"
+import axios from "axios"
+import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import { useNavigate } from 'react-router'
+import DeleteCard from '@/Components/DeleteCard/DeleteCard'
+import { toast } from 'react-toastify'
 const Product = () => {
 
   const [loading, setLoading] = useState(false);
