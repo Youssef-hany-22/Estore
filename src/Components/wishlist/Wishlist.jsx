@@ -74,8 +74,8 @@ const Wishlist = () => {
                         <div className="col-md-9">
                             <h2>{item.title}</h2>
                             <p> price : <span style={{color:"#0aad0a"}}>{item.price}</span> </p>
-                            <p> Rating : <span style={{color:"#0aad0a"}}>{item.rating}</span> </p>
-                            <button style={{backgroundColor:"#0aad0a"}} className='btn w-25 mx-2 btn-sm  text-light mt-2' onClick={()=>dispatch(add(item))}>cart </button>
+      <p><i className='fas fa-star text-warning me-1' ></i>  :  {item.rating}</p>
+                   </div>                            <button style={{backgroundColor:"#0aad0a"}} className='btn w-25 mx-2 btn-sm  text-light mt-2' onClick={()=>dispatch(add(item))}>cart </button>
                             <button style={{backgroundColor:"#ad330a"}} className='btn w-25 btn-sm   text-light mt-2' onClick={()=> deleteProduct(item.id)}>delete</button>
 
                         </div>

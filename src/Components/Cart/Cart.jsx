@@ -81,7 +81,9 @@ productExistInWishlist()
                         <div className="col-md-9">
                             <h2>{item.title}</h2>
                             <p> price : <span style={{color:"#0aad0a"}}>{item.price}</span> </p>
-                            <p> Rating : <span style={{color:"#0aad0a"}}>{item.rating}</span> </p>
+                              <p><i className='fas fa-star text-warning me-1' ></i>  :  {item.rating}</p>
+                   </div>
+                  
                  <button  onClick={()=>dispatch(add(item)) } className='btn  text-main-light  btn-sm mx-2    text-muted  '> <i className='fa fa-heart ' ></i> </button>
 
                    <button style={{backgroundColor:"#ad330a"}} className='btn w-25 btn-sm   text-light mt-2' onClick={()=> deleteProduct(item.id)}>delete</button>
