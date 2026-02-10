@@ -125,7 +125,7 @@ productExistInWishlist()
                     <p className='text-main font-sm ' style={{color:"#0aad0a"}} >{data.brand}</p>
                    <div className="d-flex justify-content-between align-items-center" >
                       <p>price : {data.price} EGP</p>
-                    <p><i className='fas fa-star text-warning me-1' ></i>  :  {data.rating}</p>
+                    <p><i className='fas fa-star text-warning me-1' ></i> :  {data.rating}</p>
                    </div>
                   
                      <div className='d-flex justify-content-around mt-4'>
