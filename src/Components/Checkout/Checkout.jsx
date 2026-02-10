@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart, toggleSelect } from '@/features/addToCartSlice'
 import { useNavigate } from 'react-router'
+import { toast } from 'react-toastify'
 const Checkout = () => {
     let navigate = useNavigate()
     const cartItems = useSelector((state) => state.cartArray.value);
@@ -19,14 +20,18 @@ let dispatch = useDispatch()
   );
 
   const handleOrder = () => {
-    alert("Order placed successfully");
+  success()
   dispatch(clearCart());
   navigate("/");
 };
 const handleSubmit = (e) => {
   e.preventDefault();   
-  alert("Order placed");
+  
 };
+  const success = () =>toast.success("Order placed successfully", {
+                    position: "top-right",
+                    autoClose: 2000,
+                  });
   return (
        <div className="container mt-5">
       <h2>Checkout</h2>
